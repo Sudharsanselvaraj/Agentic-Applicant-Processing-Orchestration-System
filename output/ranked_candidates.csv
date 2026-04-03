@@ -1,0 +1,6 @@
+name,email,score,tier,reason
+Rahul,rahul@gmail.com,65,Standard,Solid candidate with good potential
+Akash,akash@gmail.com,45,Review,Requires further evaluation
+Priya,priya@gmail.com,40,Review,Requires further evaluation
+Vikram,vikram@gmail.com,35,Reject,Does not meet minimum requirements
+Neha,neha@gmail.com,0,Reject,Does not meet minimum requirements

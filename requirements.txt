@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+sentence-transformers
+fastapi
+uvicorn
+python-dotenv
+google-api-python-client
+google-auth
+google-auth-oauthlib

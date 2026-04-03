@@ -1,0 +1,6 @@
+name,email,skills,github,answer,response_time
+Rahul,rahul@gmail.com,"Python, ML, SQL",https://github.com/rahul,"I would use Selenium to automate the browser interactions and handle dynamic content loading with explicit waits. For API testing, I'd use requests library with pytest for validation.",15
+Priya,priya@gmail.com,"Java, SQL, Spring",https://github.com/priya,"Here is a comprehensive overview of the approach. As an AI language model, I'd be happy to help you understand the design patterns used in enterprise applications. In today's rapidly evolving tech landscape, it's important to consider scalability and maintainability.",1
+Akash,akash@gmail.com,"Python, Django, React",https://github.com/akash,"Built a REST API using Django REST framework with JWT authentication. Implemented rate limiting and caching with Redis for performance optimization.",45
+Neha,neha@gmail.com,"Node.js, MongoDB",,"I know MongoDB well.",3
+Vikram,vikram@gmail.com,"Go, Kubernetes, Docker",https://github.com/vikram,"Designed and deployed microservices on Kubernetes using Helm charts. Implemented CI/CD pipelines with GitHub Actions.",60
