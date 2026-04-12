@@ -10,17 +10,17 @@ def init_learner_db():
     """Ensure learner tables exist."""
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
-    
+
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS interactions (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            id             INTEGER PRIMARY KEY AUTOINCREMENT,
             candidate_email TEXT,
-            round_number INTEGER,
-            score REAL,
-            tier TEXT,
-            reason TEXT,
-            responded INTEGER,
-            timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+            round_number   INTEGER DEFAULT 1,
+            score          REAL,
+            tier           TEXT,
+            reason         TEXT,
+            responded      INTEGER DEFAULT 1,
+            timestamp      DATETIME DEFAULT CURRENT_TIMESTAMP
         )
     """)
     
@@ -40,6 +40,8 @@ def log_interaction(email, round_num, score, tier, reason, responded=True):
     """Log a candidate interaction."""
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
+    # Ensure table has all needed columns (init_learner_db may not have run)
+    init_learner_db()
     cursor.execute("""
         INSERT INTO interactions 
         (candidate_email, round_number, score, tier, reason, responded)
@@ -180,20 +182,20 @@ def update_scoring_weights():
     return weights
 
 def get_top_thinking_candidates(n: int = 3) -> list:
-    """Find candidates who showed most original thinking (via questions asked)."""
+    """Find candidates with highest scores — proxy for original thinking."""
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
-    
+
     cursor.execute("""
-        SELECT candidate_email, reason 
-        FROM interactions 
-        WHERE reason LIKE '%question%'
-        ORDER BY id DESC LIMIT ?
+        SELECT candidate_email, score, tier, reason
+        FROM interactions
+        ORDER BY score DESC
+        LIMIT ?
     """, (n,))
-    
+
     results = cursor.fetchall()
     conn.close()
-    return [{"email": r[0], "reason": r[1]} for r in results]
+    return [{"email": r[0], "score": r[1], "tier": r[2], "reason": r[3]} for r in results]
 
 def get_most_common_approach() -> dict:
     """Analyze what approach candidates most commonly suggest."""

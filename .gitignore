@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.env
+
+# OS
+.DS_Store
+
+# Credentials (keep locally)
+.env
+credentials.json
+token.pickle
+
+# Data
+data/cookies.json
+logs/*.db
+*.log
