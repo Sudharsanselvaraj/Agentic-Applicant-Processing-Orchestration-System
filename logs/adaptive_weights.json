@@ -1,0 +1,7 @@
+{
+  "skill_weight": 1.0,
+  "github_weight": 1.0,
+  "answer_length_weight": 1.0,
+  "ai_detection_weight": 1.0,
+  "insights": []
+}

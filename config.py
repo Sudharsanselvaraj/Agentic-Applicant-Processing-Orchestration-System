@@ -35,7 +35,11 @@ AI_PHRASES = [
 ]
 
 TIER_THRESHOLDS = {
-    "Fast-Track": 75,
-    "Standard": 60,
-    "Review": 40
+    "Fast-Track": 65,
+    "Standard":   45,
+    "Review":     25,
 }
+
+# --- Email (set via .env or environment) ---
+HR_EMAIL = os.environ.get("HR_EMAIL", "hr@genotek.global")
+DEMO_CANDIDATE_EMAIL = os.environ.get("DEMO_CANDIDATE_EMAIL", "")

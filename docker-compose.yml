@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  apos:
+    build: .
+    container_name: apos
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data        # cookies.json, progress files
+      - ./logs:/app/logs    # interactions.db
+      - ./output:/app/output
+    env_file: .env
+    environment:
+      - PYTHONUNBUFFERED=1
+    healthcheck:
+      test: ["CMD", "python", "-c", "import os; os.exit(0)"]
+      interval: 60s
+      timeout: 10s
+      retries: 3
+    networks:
+      - apos-net
+
+  # Optional: API server
+  api:
+    build: .
+    container_name: apos-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    env_file: .env
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: uvicorn api.server:app --host 0.0.0.0 --port 8000
+    depends_on:
+      - apos
+    networks:
+      - apos-net
+
+networks:
+  apos-net:
+    driver: bridge

@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Rahul",
+    "email": "rahul@gmail.com",
+    "skills": "Python, ML, SQL",
+    "github": "https://github.com/rahul",
+    "answer": "I would use Selenium to automate the browser interactions and handle dynamic content loading with explicit waits. For API testing, I'd use requests library with pytest for validation.",
+    "response_time": 15,
+    "score": 70,
+    "tier": "Standard",
+    "reason": "Matched 3 relevant skills; GitHub: 6 repos, 22 followers \u2014 active; Moderate answer length"
+  },
+  {
+    "name": "Akash",
+    "email": "akash@gmail.com",
+    "skills": "Python, Django, React",
+    "github": "https://github.com/akash",
+    "answer": "Built a REST API using Django REST framework with JWT authentication. Implemented rate limiting and caching with Redis for performance optimization.",
+    "response_time": 45,
+    "score": 50,
+    "tier": "Review",
+    "reason": "Matched 1 relevant skills; GitHub: 13 repos, 23 followers \u2014 active; Moderate answer length"
+  },
+  {
+    "name": "Ankit",
+    "email": "ankit@gmail.com",
+    "skills": "Python, Selenium",
+    "github": "https://github.com/ankit",
+    "answer": "I would use Selenium to automate the browser interactions and handle dynamic content loading with explicit waits. For API testing, I'd use requests library with pytest for validation.",
+    "response_time": 20,
+    "score": 50,
+    "tier": "Review",
+    "reason": "Matched 1 relevant skills; GitHub: 45 repos, 169 followers \u2014 active; Moderate answer length"
+  },
+  {
+    "name": "Raj",
+    "email": "raj@gmail.com",
+    "skills": "Java, Spring Boot",
+    "github": "https://github.com/raj",
+    "answer": "Here is a detailed explanation of my approach to solving this problem. I would use Selenium WebDriver with explicit waits to handle dynamic content. The comprehensive solution involves understanding the DOM structure.",
+    "response_time": 2,
+    "score": 41,
+    "tier": "Review",
+    "reason": "Matched 1 relevant skills; GitHub: 12 repos, 21 followers \u2014 active; Detailed answer provided; AI-generated content (70%); Suspiciously fast response"
+  },
+  {
+    "name": "Vikram",
+    "email": "vikram@gmail.com",
+    "skills": "Go, Kubernetes, Docker",
+    "github": "https://github.com/vikram",
+    "answer": "Designed and deployed microservices on Kubernetes using Helm charts. Implemented CI/CD pipelines with GitHub Actions.",
+    "response_time": 60,
+    "score": 40,
+    "tier": "Review",
+    "reason": "GitHub: 60 repos, 33 followers \u2014 active; Moderate answer length"
+  },
+  {
+    "name": "Sneha",
+    "email": "sneha@gmail.com",
+    "skills": "Python, SQL, AWS",
+    "github": "https://github.com/sneha",
+    "answer": "I would use Playwright with Python for browser automation. It handles dynamic content better than Selenium.",
+    "response_time": 90,
+    "score": 20,
+    "tier": "Reject",
+    "reason": "Matched 2 relevant skills; GitHub has 0 public repos (sneha); Moderate answer length"
+  },
+  {
+    "name": "Priya",
+    "email": "priya@gmail.com",
+    "skills": "Java, SQL, Spring",
+    "github": "https://github.com/priya",
+    "answer": "Here is a comprehensive overview of the approach. As an AI language model, I'd be happy to help you understand the design patterns used in enterprise applications. In today's rapidly evolving tech landscape, it's important to consider scalability and maintainability.",
+    "response_time": 1,
+    "score": 5,
+    "tier": "Reject",
+    "reason": "Matched 2 relevant skills; GitHub has 0 public repos (priya); Detailed answer provided; AI-generated content (100%); Suspiciously fast response"
+  },
+  {
+    "name": "Priya2",
+    "email": "priya2@gmail.com",
+    "skills": "Java, SQL, Spring",
+    "github": "https://github.com/priya2",
+    "answer": "Here is a comprehensive overview of the approach. As an AI language model, I'd be happy to help you understand the design patterns used in enterprise applications. In today's rapidly evolving tech landscape, it's important to consider scalability and maintainability.",
+    "response_time": 1,
+    "score": 5,
+    "tier": "Reject",
+    "reason": "Matched 2 relevant skills; GitHub has 0 public repos (priya2); Detailed answer provided; AI-generated content (100%); Suspiciously fast response"
+  },
+  {
+    "name": "Neha",
+    "email": "neha@gmail.com",
+    "skills": "Node.js, MongoDB",
+    "github": "",
+    "answer": "I know MongoDB well.",
+    "response_time": 3,
+    "score": 0,
+    "tier": "Reject",
+    "reason": "No GitHub provided; Short answer; Suspiciously fast response"
+  },
+  {
+    "name": "Amit",
+    "email": "amit@gmail.com",
+    "skills": "Python, Pandas",
+    "github": "",
+    "answer": "Used pandas for data analysis in a college project.",
+    "response_time": 120,
+    "score": 0,
+    "tier": "Reject",
+    "reason": "Matched 1 relevant skills; No GitHub provided; Short answer"
+  }
+]

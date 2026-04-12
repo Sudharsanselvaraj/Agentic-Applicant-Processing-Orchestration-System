@@ -19,7 +19,7 @@ def main():
     reasons = []
     
     for _, row in df.iterrows():
-        score, reason = score_candidate(row)
+        score, reason, details = score_candidate(row)
         scores.append(score)
         reasons.append(reason)
     

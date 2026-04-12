@@ -22,7 +22,7 @@ def score_candidate_api(candidate: CandidateRequest):
         "response_time": candidate.response_time
     }
     
-    score, reason = score_candidate(row)
+    score, reason, details = score_candidate(row)
     tier = get_tier(score)
     
     return {
