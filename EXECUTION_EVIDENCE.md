@@ -24,6 +24,7 @@ Priya2: score=40, tier=Review
   Reason: Matched 2 relevant skills; Valid GitHub profile; Detailed answer provided; AI-generated content detected (60%)
 Ankit: score=45, tier=Review
   Reason: Matched 1 relevant skills; Valid GitHub profile; Moderate answer length
+Amount :10 matched 40
 ```
 
 ## Test Run 2: Timing Analysis
